@@ -5,6 +5,8 @@ eval `ssh-agent -s` > /dev/null
 
 source ~/.aliases
 
+#curl -s "http://api.icndb.com/jokes/random" | jq '.value.joke'| cowsay
+
 [[ $- != *i* ]] && return
 
 colors() {
@@ -149,3 +151,10 @@ export VISUAL="vim"
 export ANSIBLE_NOCOWS=1
 export AWS_ACCESS_KEY_ID=AKIAVDAKHX5QUUSGAR4Y
 export AWS_SECRET_ACCESS_KEY=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
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
