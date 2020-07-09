@@ -13,3 +13,5 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
+alias colo="echo 30LEop | sudo openconnect --user=mbianchi --passwd-on-stdin https://vpnmtv.cloudian.com"
+alias qct="sudo openvpn --config /home/marco/qct/qct.conf"
